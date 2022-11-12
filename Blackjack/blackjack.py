@@ -7,7 +7,7 @@ def main():
     # random.shuffle(deck)
     print(deck)
     c1=deck.pop(len(deck)-1)
-    c2=deck.pop(len(deck)-1)
+    c2=deck.pop(12)
     print("Your cards are: " + str(c1) + " and " + str(c2) + "\n")
 
     # Gets the value of the two cards 
@@ -22,8 +22,9 @@ def main():
         number1=10
     if c2.get_number() == "J" or c2.get_number() == "Q" or c2.get_number() == "K":
         number2=10
-    if c1.get_number() == "A" or c2.get_number() == "A":
+    if c1.get_number() == "A":
         number1=11
+    if c2.get_number() == "A":
         number2=11
 
     total = int(number1)+int(number2)
