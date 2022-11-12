@@ -1,5 +1,5 @@
 """
-Provides a constructor for a playing card
+Provides a constructor for a playing
 """
 class Card:
     __slots__ = ['__number', '__suit']
@@ -16,5 +16,9 @@ class Card:
     
     # Prints the card in the format <Number><First Letter of Suit>
     def __str__(self):
+        a_string= str(self.__number) + self.__suit
+        return a_string
+
+    def __repr__(self):
         a_string= str(self.__number) + self.__suit
         return a_string
